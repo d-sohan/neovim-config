@@ -1,5 +1,5 @@
 "vim-plug
-call plug#begin('~/local/share/nvim/plugged')
+call plug#begin('~/.config/nvim/plugged')
 
 Plug 'morhetz/gruvbox'
 Plug 'vim-airline/vim-airline'
@@ -17,7 +17,7 @@ set smartindent
 
 "basic settings
 syntax on
-set nu
+set nu rnu
 set termguicolors
 set nowrap
 
