@@ -1,34 +1,31 @@
 "vim-plug
 call plug#begin('~/.config/nvim/plugged')
 
-Plug 'morhetz/gruvbox'
+Plug 'gruvbox-community/gruvbox'
 Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-Plug 'jiangmiao/auto-pairs'
+Plug 'tpope/vim-fugitive'
 
 call plug#end()
 
 "indentation
-filetype indent off
 set tabstop=4
-set softtabstop=4
 set shiftwidth=4
 set expandtab
-set smartindent
 
 "basic settings
-syntax on
 set nu rnu
 set termguicolors
 set nowrap
 
 "colorscheme
-let g:gruvbox_italic = '1'
-let g:airline_theme='gruvbox'
+let g:gruvbox_italic = 1
 colorscheme gruvbox
 
-"stop autocomment
-autocmd FileType * setlocal formatoptions-=cro
+"vim-airline
+let g:airline_powerline_fonts = 1
 
 "remaps
-nnoremap <C-a> <ESC>ggVG<CR>
+"nnoremap <C-a> <ESC>ggVG<CR>
+
+" cino
+set cino=:0,g0
